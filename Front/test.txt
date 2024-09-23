@@ -1,9 +1,7 @@
-
-
-
-
-
-
-
-
-ceci est un test
+collaborateurs :
+- Arthur Berret
+- Constance Déal
+- Gabrielle Leclerc
+- Maëlys Nainville
+- Paul Rouxel
+- Jules Dias
