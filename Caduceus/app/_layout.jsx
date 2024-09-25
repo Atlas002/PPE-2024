@@ -7,11 +7,11 @@ const RootLayout = () => {
     return (
         <>
         
-        <StatusBar hidden = {true}/>
+        
 
         <Stack>
-            <Stack.Screen name = "index" option = {{headerShown : false}}  />
-            <Stack.Screen name = "appointments" option = {{headerShown : false}}  />
+            <Stack.Screen name = "index" options = {{headerShown : false}}  />
+            <Stack.Screen name = "appointments" options = {{headerShown : true}}  />
         </Stack>
         </>
     )
