@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {styles} from './styles.js';
+import { useRouter } from 'expo-router'; // Import useRouter for navigation
+
 
 
 import {
@@ -25,6 +27,17 @@ const SignUpForm = () => {
     password: '',
     confirmPassword: ''
   });
+  const [menuVisible, setMenuVisible] = useState(false);
+  const router = useRouter(); // Initialize the router for navigation
+
+  const navigateToPage = (url) => {
+    // Close the sidebar if it's open
+    if (menuVisible) {
+      toggleMenu();
+    }
+    // Navigate to the specified page
+    router.push(url);
+  };
 
   const handleInputChange = (field, value) => {
     setFormData({ ...formData, [field]: value });
@@ -106,7 +119,7 @@ const SignUpForm = () => {
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity style={styles.submitButton} onPress={handleFormSubmit}>
+        <TouchableOpacity style={styles.submitButton} onPress={() => navigateToPage('/complementaryInfos')}>
           <Text style={styles.submitButtonText}>Envoyer</Text>
         </TouchableOpacity>
       </ScrollView>
