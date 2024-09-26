@@ -74,6 +74,13 @@ export default function Index() {
             content={ ["[Carte Map]"]}
             onPress={() => navigateToPage('/plan')}
         />
+
+        {/* TEST */}
+        <Widget
+            title="WIDGET TEST"
+            content={ ["Test vers les sub layout"]}
+            onPress={() => navigateToPage('/traitements')}
+        />
       </ScrollView>
 
       {/* Sidebar */}
