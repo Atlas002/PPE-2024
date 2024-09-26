@@ -71,4 +71,63 @@ export const styles = StyleSheet.create({
   modalOverlay :{
     flex: 1,
   },
+  formContainer: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  scrollContent: {
+    padding: 20,
+    flexGrow: 1,
+  },
+  formTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginVertical: 10,
+  },
+  formSubtitle: {
+    textAlign: 'center',
+    fontSize: 14,
+    marginBottom: 20,
+    color: '#7a7a7a',
+  },
+  inputLabel: {
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  inputField: {
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    marginBottom: 15,
+    backgroundColor: '#e0e0e0',
+  },
+  passwordInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 15,
+  },
+  passwordInputField: {
+    flex: 1,
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    backgroundColor: '#e0e0e0',
+  },
+  submitButton: {
+    backgroundColor: '#4f6d7a',
+    padding: 12,
+    borderRadius: 10,
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  submitButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  }
 });
