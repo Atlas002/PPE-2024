@@ -9,4 +9,4 @@ Team members :
 - Jules DIAS
 - Constance DEAL
 - Maëlys NAINVILLE
-- Gabrielle LECLERC 
+- Gabrielle LECLERC oo
