@@ -1,3 +1,4 @@
+/*
 import React, { useState } from "react";
 import {styles} from './styles.js';
 import { useRouter } from 'expo-router'; // Import useRouter for navigation
@@ -80,3 +81,47 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+*/
+
+
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function App() {
+  const [prenom, setPrenom] = useState('');
+
+  useEffect(() => {
+    fetch('http://sql104.infinityfree.com:3306/user/1')
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.Prenom) {
+          setPrenom(data.Prenom);
+        } else {
+          setPrenom('Utilisateur non trouvé');
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching user:', error);
+        setPrenom('Erreur de chargement');
+      });
+  }, []);
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Prénom de l'utilisateur: {prenom}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  text: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+});

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import {styles} from './styles.js';
 import { useRouter } from 'expo-router'; // Import useRouter for navigation
@@ -64,7 +65,7 @@ const SignUpForm = () => {
           onChangeText={(text) => handleInputChange('name', text)}
         />
 
-        <Text style={styles.inputLabel}>Prénom</Text>
+        <Text style={styles.inputLabel}>Prénom: </Text>
         <TextInput
           style={styles.inputField}
           value={formData.surname}
@@ -128,3 +129,5 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
+
+
