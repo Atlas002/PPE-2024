@@ -18,7 +18,7 @@ const Sidebar = ({ menuVisible, toggleMenu, slideAnimation, navigate }) => {
           <SidebarItem title="PLAN" navigate={navigate} url="/plan" />
           <SidebarItem title="MES PROFESSIONNELS DE SANTÉ" navigate={navigate} url="/professionals" />
           <SidebarItem title="SE DÉCONNECTER" navigate={navigate} url="/logout" />
-          <SidebarItem title="SE CONNECTER" navigate={navigate} url="/signIn" />
+          <SidebarItem title="SE CONNECTER" navigate={navigate} url="/logIn" />
         </View>
       </Animated.View>
     </Modal>
