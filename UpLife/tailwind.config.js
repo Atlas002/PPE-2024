@@ -7,11 +7,7 @@ module.exports = {
     require("nativewind/preset")
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'FS_Sinclair': ['FS_SINCLAIR', 'sans-serif'],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
