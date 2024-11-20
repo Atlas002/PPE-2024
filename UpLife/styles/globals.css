@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'FS_SINCLAIR';
+    src: url('../assets/fonts/FS_Sinclair_Medium.otf');
+  }
+  
