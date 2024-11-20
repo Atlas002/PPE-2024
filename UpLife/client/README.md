@@ -33,7 +33,7 @@ commandes utilisées:
 ```
 
 ```bash
-   npx expo install expo-router
+   npx expo install expo-router expo-linking
 ```
 
 ```bash
@@ -45,6 +45,6 @@ commandes utilisées:
 ```
 
 ```bash
-   npm install @react-navigation/native @react-navigation/stack react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated react-native-get-random-values
+   npm install @react-navigation/native @react-navigation/stack react-native-screens react-native-safe-area-context@4.12.0 react-native-gesture-handler react-native-reanimated react-native-get-random-values
 ```
 
